@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-11T15:47:53.967Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="xJYPeACcWSo_tFP3otRW" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-11T15:48:40.433Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="eZmeWop23Eb-FsyfQcP7" version="14.4.7" type="github">
   <diagram id="tecg3Ebke4kYlPjY19By" name="Page-1">
     <mxGraphModel dx="1344" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -501,6 +501,45 @@
         </mxCell>
         <mxCell id="lM9nDMKkD4nMDw7KepDL-149" value="&lt;h1&gt;Explaintation&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 24px&quot;&gt;- Một User thì có thể Order nhiều phòng, một phòng (khác ngày)&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;font-size: 24px&quot;&gt;thì được order bởi nhiều User&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 24px&quot;&gt;- Một User thì có thể comment nhiều phòng, một phòng thì được comment bởi nhiều User&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 24px&quot;&gt;- Một User thì có thể feedback nhiều phòng, một phòng thì được feedback bởi nhiều User&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 24px&quot;&gt;- Một User thì có thể gửi nhiều tin nhắn đến User khác và ngược lại&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 24px&quot;&gt;- Một User có thể nhận nhiều thông báo&lt;/font&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="230" y="1030" width="700" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-51" value="tblServices" style="shape=table;startSize=30;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="50" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-52" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=1;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-51">
+          <mxGeometry y="30" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-53" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;fontStyle=1;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-52">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-54" value="orderID" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;fontStyle=5;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-52">
+          <mxGeometry x="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-55" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-51">
+          <mxGeometry y="60" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-56" value="PK" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-55">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-57" value="user" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-55">
+          <mxGeometry x="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-58" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-51">
+          <mxGeometry y="90" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-59" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-58">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-60" value="date" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-58">
+          <mxGeometry x="30" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-61" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-51">
+          <mxGeometry y="120" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-62" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-61">
+          <mxGeometry width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-63" value="total" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-61">
+          <mxGeometry x="30" width="150" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
