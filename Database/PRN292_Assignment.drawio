@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-11T15:55:01.621Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="NIU6QhueqpkJpMmTTlKT" version="14.4.7" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-11T15:56:30.645Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36" etag="z49p5Pb8LNmJuxGqTkaB" version="14.4.7" type="github">
   <diagram id="tecg3Ebke4kYlPjY19By" name="Page-1">
     <mxGraphModel dx="1344" dy="834" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
@@ -604,7 +604,7 @@
         <mxCell id="1Q2SQGisHTm5oGMWfOsZ-84" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-83">
           <mxGeometry width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-85" value="Status    bit" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-83">
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-85" value="Quantity    int" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-83">
           <mxGeometry x="30" width="170" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1Q2SQGisHTm5oGMWfOsZ-86" value="" style="shape=partialRectangle;collapsible=0;dropTarget=0;pointerEvents=0;fillColor=none;top=0;left=0;bottom=0;right=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-70">
@@ -613,7 +613,7 @@
         <mxCell id="1Q2SQGisHTm5oGMWfOsZ-87" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;editable=1;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-86">
           <mxGeometry width="30" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-88" value="" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-86">
+        <mxCell id="1Q2SQGisHTm5oGMWfOsZ-88" value="Total   float" style="shape=partialRectangle;connectable=0;fillColor=none;top=0;left=0;bottom=0;right=0;align=left;spacingLeft=6;overflow=hidden;" vertex="1" parent="1Q2SQGisHTm5oGMWfOsZ-86">
           <mxGeometry x="30" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
