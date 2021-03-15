@@ -1,0 +1,9 @@
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\bin\Debug\netcoreapp3.1\ReservationDTO.deps.json
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\bin\Debug\netcoreapp3.1\ReservationDTO.dll
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\bin\Debug\netcoreapp3.1\ReservationDTO.pdb
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\obj\Debug\netcoreapp3.1\ReservationDTO.csprojAssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\obj\Debug\netcoreapp3.1\ReservationDTO.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\obj\Debug\netcoreapp3.1\ReservationDTO.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\obj\Debug\netcoreapp3.1\ReservationDTO.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\obj\Debug\netcoreapp3.1\ReservationDTO.dll
+C:\Users\User\OneDrive\Desktop\Project C#\PRN292_Assignment\Project\Reservation\ReservationDTO\obj\Debug\netcoreapp3.1\ReservationDTO.pdb
