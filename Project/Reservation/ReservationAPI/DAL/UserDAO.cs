@@ -8,7 +8,7 @@ using ReservationDTO.DTO;
 
 namespace ReservationAPI.DAL
 {
-    class UserDAO
+    class UserDAO : AbstractDAO
     {
         public UserDTO CheckLogin(string userID, string password)
         {
@@ -47,6 +47,34 @@ namespace ReservationAPI.DAL
                 conn.Close();
             }
             return dto;
+        }
+
+        public bool RegisterAccount(UserDTO dto)
+        {
+            string sql = "spRegisterAccount";
+            string parameter = "@userID,@fullName,@password,@phone,@email,@identityCard,@gender,@address," +
+                "@role,@status,@createdDate";
+            object[] value = {dto.UserID, dto.FullName, dto.Password, dto.Phone, 
+                dto.Email, dto.IdentityCard, dto.Gender, dto.Address, dto.Role, dto.Status, dto.CreatedDate};
+            return ExecuteNonQuery(sql, parameter, value);
+        }
+
+        public bool UpdateAccount(UserDTO dto)
+        {
+            string sql = "spUpdateAccount";
+            string parameter = "@userID,@fullName,@password,@phone,@email,@identityCard,@gender,@address," +
+                "@role,@status,@modifiedDate";
+            object[] value = {dto.UserID, dto.FullName, dto.Password, dto.Phone,
+                dto.Email, dto.IdentityCard, dto.Gender, dto.Address, dto.Role, dto.Status, dto.ModifiedDate};
+            return ExecuteNonQuery(sql, parameter, value);
+        }
+
+        public bool DeleteAccount(UserDTO dto)
+        {
+            string sql = "spUpdateStatusAccount";
+            string parameter = "@userID,@status,@modifiedDate";
+            object[] value = {dto.UserID, dto.Status, dto.ModifiedDate};
+            return ExecuteNonQuery(sql, parameter, value);
         }
     }
 }
