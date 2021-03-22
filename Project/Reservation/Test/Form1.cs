@@ -24,7 +24,7 @@ namespace Test
         private void Login()
         {
             string userID = "nlcdanh";
-            string password = "1234";
+            string password = "123";
             UserDTO dto = bll.CheckLogin(userID, password);
             if (dto != null)
             {
@@ -140,10 +140,10 @@ namespace Test
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            //Login();
+            Login();
             //Register();
             //UpdateAccount();
-            DeleteAccount();
+            //DeleteAccount();
         }
     }
 }

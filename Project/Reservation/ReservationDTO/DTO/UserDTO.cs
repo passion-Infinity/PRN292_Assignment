@@ -14,6 +14,7 @@ namespace ReservationDTO.DTO
         public string IdentityCard { get; set; }
         public string Gender { get; set; }
         public string Address { get; set; }
+        public string Image { get; set; }
         public string Role { get; set; }
         public bool Status { get; set; }
         public DateTime CreatedDate { get; set; }

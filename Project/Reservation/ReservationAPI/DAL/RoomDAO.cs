@@ -10,6 +10,11 @@ namespace ReservationAPI.DAL
 {
     class RoomDAO : AbstractDAO
     {
+        public DataTable GetAllRoom()
+        {
+            string sql = "Select * from tblRooms";
+            return ExecuteQuery(sql);
+        }
         public bool AddNewRoom(RoomDTO dto)
         {
             string sql = "spAddNewRoom";

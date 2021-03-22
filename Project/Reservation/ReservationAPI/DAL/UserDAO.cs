@@ -49,13 +49,19 @@ namespace ReservationAPI.DAL
             return dto;
         }
 
+        public DataTable GetAll()
+        {
+            string sql = "Select * from tblUsers";
+            return ExecuteQuery(sql);
+        }
+
         public bool RegisterAccount(UserDTO dto)
         {
             string sql = "spRegisterAccount";
             string parameter = "@userID,@fullName,@password,@phone,@email,@identityCard,@gender,@address," +
-                "@role,@status,@createdDate";
+                "@image,@role,@status,@createdDate";
             object[] value = {dto.UserID, dto.FullName, dto.Password, dto.Phone, 
-                dto.Email, dto.IdentityCard, dto.Gender, dto.Address, dto.Role, dto.Status, dto.CreatedDate};
+                dto.Email, dto.IdentityCard, dto.Gender, dto.Address, dto.Image, dto.Role, dto.Status, dto.CreatedDate};
             return ExecuteNonQuery(sql, parameter, value);
         }
 
@@ -63,9 +69,9 @@ namespace ReservationAPI.DAL
         {
             string sql = "spUpdateAccount";
             string parameter = "@userID,@fullName,@password,@phone,@email,@identityCard,@gender,@address," +
-                "@role,@status,@modifiedDate";
+                "@image,@role,@status,@modifiedDate";
             object[] value = {dto.UserID, dto.FullName, dto.Password, dto.Phone,
-                dto.Email, dto.IdentityCard, dto.Gender, dto.Address, dto.Role, dto.Status, dto.ModifiedDate};
+                dto.Email, dto.IdentityCard, dto.Gender, dto.Address, dto.Image, dto.Role, dto.Status, dto.ModifiedDate};
             return ExecuteNonQuery(sql, parameter, value);
         }
 
