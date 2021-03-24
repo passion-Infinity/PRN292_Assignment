@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "UfUeDpy7LWvCYzFq28TWe+XhtdC7ADvy42Ot27HaDDFmeF1nN7uIyRnGINMNc5Sg0BadjFH3UMdYyY0gKiuTbQ==",
+  "dgSpecHash": "oIhsnWLDq2MyPhcGpXvFY2vWYZEe5cIjO+VjEcHpH1mFXgzScF5Htg/gAcpvWUOGmB4a1aKTGccHPMzht0wKKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\ealflm\\.nuget\\packages\\materialdesigncolors\\2.0.0\\materialdesigncolors.2.0.0.nupkg.sha512",
+    "C:\\Users\\ealflm\\.nuget\\packages\\materialdesignthemes\\4.0.0\\materialdesignthemes.4.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
