@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
+        "projectPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\ealflm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ealflm\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -532,11 +532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\PresentationLayer\\PresentationLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayer\\PresentationLayer.csproj",
       "projectName": "PresentationLayer",
-      "projectPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\PresentationLayer\\PresentationLayer.csproj",
+      "projectPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayer\\PresentationLayer.csproj",
       "packagesPath": "C:\\Users\\ealflm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\PresentationLayer\\obj\\",
+      "outputPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ealflm\\AppData\\Roaming\\NuGet\\NuGet.Config",

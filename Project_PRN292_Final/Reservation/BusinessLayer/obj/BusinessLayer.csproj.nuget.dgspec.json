@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
+        "projectPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
         "packagesPath": "C:\\Users\\ealflm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\BusinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ealflm\\AppData\\Roaming\\NuGet\\NuGet.Config",

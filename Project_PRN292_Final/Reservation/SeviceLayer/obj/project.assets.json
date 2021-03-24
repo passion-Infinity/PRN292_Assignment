@@ -532,11 +532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\SeviceLayer\\SeviceLayer.csproj",
+      "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\SeviceLayer\\SeviceLayer.csproj",
       "projectName": "SeviceLayer",
-      "projectPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\SeviceLayer\\SeviceLayer.csproj",
+      "projectPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\SeviceLayer\\SeviceLayer.csproj",
       "packagesPath": "C:\\Users\\ealflm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ealflm\\Desktop\\Project\\PRN292_Assignment\\Project_PRN292_Final\\Reservation\\SeviceLayer\\obj\\",
+      "outputPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\SeviceLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ealflm\\AppData\\Roaming\\NuGet\\NuGet.Config",
