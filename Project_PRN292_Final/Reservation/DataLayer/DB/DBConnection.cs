@@ -9,7 +9,7 @@ namespace DataLayer.DB
     {
         public static SqlConnection GetConnection()
         {
-            string strConnection = @"server=SE140655\SQLEXPRESS;database=PRN292_Assignment;uid=sa;pwd=danh123";
+            string strConnection = @"server=SE140834\SQLEXPRESS;database=PRN292_Assignment;uid=ealflm;pwd=";
             SqlConnection conn = new SqlConnection(strConnection);
             return conn;
         }
