@@ -11,27 +11,29 @@ namespace SeviceLayer
         // User Repository
         User CheckLogin(string userID, string password);
         DataTable GetAllAccounts();
+        DataTable FindByName(string name);
         bool RegisterAccount(User user);
         bool UpdateAccount(User user);
         bool DisableAccount(User user);
+        
 
         // Room Type Repository
-        DataTable GetAllCategories();
-        bool AddNewRoomType(RoomType roomType);
-        bool UpdateRoomType(RoomType roomType);
+        //DataTable GetAllCategories();
+        //bool AddNewRoomType(RoomType roomType);
+        //bool UpdateRoomType(RoomType roomType);
 
-        // Room Repository
-        DataTable GetAllRooms();
-        DataTable FindRoomsByRoomID(string roomID);
-        bool AddNewRoom(Room room);
-        bool UpdateRoom(Room room);
-        bool DisableRoom(Room room);
+        //// Room Repository
+        //DataTable GetAllRooms();
+        //DataTable FindRoomsByRoomID(string roomID);
+        //bool AddNewRoom(Room room);
+        //bool UpdateRoom(Room room);
+        //bool DisableRoom(Room room);
 
-        // Order Repository
-        DataTable GetAllOrders();
-        DataTable GetOrdersByUserID(string userID);
+        //// Order Repository
+        //DataTable GetAllOrders();
+        //DataTable GetOrdersByUserID(string userID);
 
-        // Order detail Repository
-        DataTable GetOrderDetailByOrderID(string orderID);
+        //// Order detail Repository
+        //DataTable GetOrderDetailByOrderID(string orderID);
     }
 }

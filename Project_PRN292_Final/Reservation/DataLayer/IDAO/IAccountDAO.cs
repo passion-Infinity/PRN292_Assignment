@@ -8,11 +8,12 @@ namespace DataLayer.IDAO
 {
     public interface IAccountDAO
     {
-        //User CheckLogin(string userID, string password);
         DataTable GetAll();
         User CheckLogin(string userID, string password);
         bool RegisterAccount(User user);
         bool UpdateAccount(User user);
         bool DisableAccount(User user);
+
+        DataTable FindByName(string name);
     }
 }

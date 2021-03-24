@@ -15,15 +15,6 @@ namespace SeviceLayer
         {
             accountDAO = new AccountDAO();
         }
-        public bool AddNewRoom(Room room)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool AddNewRoomType(RoomType roomType)
-        {
-            throw new NotImplementedException();
-        }
 
         public User CheckLogin(string userID, string password)
         {
@@ -35,44 +26,14 @@ namespace SeviceLayer
             return accountDAO.DisableAccount(user);
         }
 
-        public bool DisableRoom(Room room)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTable FindRoomsByRoomID(string roomID)
-        {
-            throw new NotImplementedException();
-        }
-
         public DataTable GetAllAccounts()
         {
             return accountDAO.GetAll();
         }
 
-        public DataTable GetAllCategories()
+        public DataTable FindByName(string name)
         {
-            throw new NotImplementedException();
-        }
-
-        public DataTable GetAllOrders()
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTable GetAllRooms()
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTable GetOrderDetailByOrderID(string orderID)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTable GetOrdersByUserID(string userID)
-        {
-            throw new NotImplementedException();
+            return accountDAO.FindByName(name);
         }
 
         public bool RegisterAccount(User user)
@@ -83,16 +44,6 @@ namespace SeviceLayer
         public bool UpdateAccount(User user)
         {
             return accountDAO.UpdateAccount(user);
-        }
-
-        public bool UpdateRoom(Room room)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool UpdateRoomType(RoomType roomType)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -64,6 +64,12 @@ namespace DataLayer.DAOimpl
             return ExecuteQuery(sql);
         }
 
+        public DataTable FindByName(string name)
+        {
+            string sql = "Select * from tblUsers Where FullName Like '%" + name +"%'";
+            return ExecuteQuery(sql);
+        }
+
         public bool RegisterAccount(User user)
         {
             string sql = "spRegisterAccount";

@@ -28,3 +28,7 @@ C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLaye
 C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLayer\obj\Debug\netcoreapp3.1\PresentationLayer.Views.Admin.FormRoom.resources
 C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLayer\obj\Debug\netcoreapp3.1\PresentationLayer.Views.Admin.FormOrder.resources
 C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLayer\obj\Debug\netcoreapp3.1\PresentationLayer.Properties.Resources.resources
+C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLayer\bin\Debug\netcoreapp3.1\SeviceLayer.dll
+C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\PresentationLayer\bin\Debug\netcoreapp3.1\SeviceLayer.pdb

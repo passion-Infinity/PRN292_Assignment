@@ -7,8 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Reference Include="BusinessLayer">
+      <HintPath>..\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll</HintPath>
+    </Reference>
     <Reference Include="DataLayer">
       <HintPath>..\DataLayer\bin\Debug\netcoreapp3.1\DataLayer.dll</HintPath>
+    </Reference>
+    <Reference Include="SeviceLayer">
+      <HintPath>..\SeviceLayer\bin\Debug\netcoreapp3.1\SeviceLayer.dll</HintPath>
     </Reference>
   </ItemGroup>
   
@@ -17,7 +23,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Presenter\" />
     <Folder Include="Views\Customer\" />
   </ItemGroup>
   

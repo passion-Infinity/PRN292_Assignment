@@ -59,12 +59,16 @@ namespace PresentationLayer.Views.Admin
             this.label10 = new System.Windows.Forms.Label();
             this.ptProfile = new System.Windows.Forms.PictureBox();
             this.btnUpload = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog3 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptProfile)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvAccounts
             // 
+            this.dgvAccounts.AllowUserToDeleteRows = false;
             this.dgvAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAccounts.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -73,6 +77,7 @@ namespace PresentationLayer.Views.Admin
             this.dgvAccounts.RowTemplate.Height = 25;
             this.dgvAccounts.Size = new System.Drawing.Size(1307, 299);
             this.dgvAccounts.TabIndex = 0;
+            this.dgvAccounts.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAccounts_CellClick);
             // 
             // label1
             // 
@@ -287,6 +292,7 @@ namespace PresentationLayer.Views.Admin
             this.btnAdd.TabIndex = 20;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnSave
             // 
@@ -301,6 +307,7 @@ namespace PresentationLayer.Views.Admin
             this.btnSave.TabIndex = 21;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnUpdate
             // 
@@ -315,6 +322,7 @@ namespace PresentationLayer.Views.Admin
             this.btnUpdate.TabIndex = 21;
             this.btnUpdate.Text = "Edit";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -329,11 +337,12 @@ namespace PresentationLayer.Views.Admin
             this.btnDelete.TabIndex = 22;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCancel
             // 
             this.btnCancel.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnCancel.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btnCancel.BackColor = System.Drawing.Color.Gray;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.Color.Honeydew;
@@ -343,6 +352,7 @@ namespace PresentationLayer.Views.Admin
             this.btnCancel.TabIndex = 23;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // txtSearch
             // 
@@ -351,6 +361,7 @@ namespace PresentationLayer.Views.Admin
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(259, 25);
             this.txtSearch.TabIndex = 24;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // label10
             // 
@@ -378,7 +389,7 @@ namespace PresentationLayer.Views.Admin
             // btnUpload
             // 
             this.btnUpload.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnUpload.BackColor = System.Drawing.SystemColors.GrayText;
+            this.btnUpload.BackColor = System.Drawing.Color.Gray;
             this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpload.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpload.ForeColor = System.Drawing.Color.Honeydew;
@@ -388,8 +399,21 @@ namespace PresentationLayer.Views.Admin
             this.btnUpload.TabIndex = 27;
             this.btnUpload.Text = "Upload";
             this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
-            // Account
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
+            // 
+            // openFileDialog3
+            // 
+            this.openFileDialog3.FileName = "openFileDialog3";
+            // 
+            // FormAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -425,9 +449,10 @@ namespace PresentationLayer.Views.Admin
             this.Controls.Add(this.dgvAccounts);
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.Name = "Account";
+            this.Name = "FormAccount";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Account";
+            this.Load += new System.EventHandler(this.FormAccount_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptProfile)).EndInit();
             this.ResumeLayout(false);
@@ -466,5 +491,8 @@ namespace PresentationLayer.Views.Admin
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox ptProfile;
         private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog3;
     }
 }
