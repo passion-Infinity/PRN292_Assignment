@@ -68,12 +68,14 @@ namespace PresentationLayer.Views.Admin
             // 
             // dgvAccounts
             // 
+            this.dgvAccounts.AllowUserToAddRows = false;
             this.dgvAccounts.AllowUserToDeleteRows = false;
             this.dgvAccounts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAccounts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAccounts.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvAccounts.Location = new System.Drawing.Point(0, 354);
             this.dgvAccounts.Name = "dgvAccounts";
+            this.dgvAccounts.ReadOnly = true;
             this.dgvAccounts.RowTemplate.Height = 25;
             this.dgvAccounts.Size = new System.Drawing.Size(1307, 299);
             this.dgvAccounts.TabIndex = 0;

@@ -43,6 +43,7 @@ namespace PresentationLayer.Views.Admin
         public string Address { get => txtAddress.Text; set => txtAddress.Text = value; }
         public string Image { get => profile; set => profile = value; }
         public bool Status { get => chkStatus.Checked; set => chkStatus.Checked = value; }
+
         private string _message;
         public string Message
         {
@@ -172,22 +173,6 @@ namespace PresentationLayer.Views.Admin
             txtAddress.Text = "";
             txtIdentity.Text = "";
         }
-        private string RandomString(int size, bool lowerCase)
-        {
-            StringBuilder sb = new StringBuilder();
-            char c;
-            Random rand = new Random();
-            for (int i = 0; i < size; i++)
-            {
-                c = Convert.ToChar(Convert.ToInt32(rand.Next(65, 87)));
-                sb.Append(c);
-            }
-            if (lowerCase)
-            {
-                return sb.ToString().ToLower();
-            }
-            return sb.ToString();
-        }
         private void GetAllAccounts()
         {
             accountPresenter = new AccountPresenter(this);
@@ -299,12 +284,12 @@ namespace PresentationLayer.Views.Admin
                     {
                         string iName = openFile.SafeFileName;
                         string extension = iName.Split(".")[1];
-                        string imageName = txtUserID.Text + "(" + RandomString(10, true) + ")" + "." + extension;
+                        string random = DateTime.Now.ToFileTime() + "";
+                        string imageName = txtUserID.Text + "_" + random + "." + extension;
                         string filepath = openFile.FileName;
                         File.Copy(filepath, appPath + imageName, true);
                         ptProfile.Image = new Bitmap(appPath + imageName);
                         profile = @"\Resources\Images\" + imageName;
-
                     }
                     catch (Exception exp)
                     {

@@ -13,6 +13,14 @@ namespace PresentationLayer.Model
         bool RegisterAccount(User user);
         bool UpdateAccount(User user);
         bool deleteAccount(User user);
-        
+        DataTable GetAllCategories();
+        bool AddNewRoomType(RoomType roomType);
+        bool UpdateRoomType(RoomType roomType);
+        DataTable GetAllRooms();
+        DataTable FindByRoomID(string roomID);
+        bool AddNewRoom(Room room);
+        bool UpdateRoom(Room room);
+        bool DeleteRoom(Room room);
+
     }
 }

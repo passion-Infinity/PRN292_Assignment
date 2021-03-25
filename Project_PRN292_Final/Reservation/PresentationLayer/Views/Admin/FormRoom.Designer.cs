@@ -39,7 +39,7 @@ namespace PresentationLayer.Views.Admin
             this.cbRoomType = new System.Windows.Forms.ComboBox();
             this.chkStatus = new System.Windows.Forms.CheckBox();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -50,13 +50,18 @@ namespace PresentationLayer.Views.Admin
             // 
             // dgvRooms
             // 
+            this.dgvRooms.AllowUserToAddRows = false;
+            this.dgvRooms.AllowUserToDeleteRows = false;
+            this.dgvRooms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRooms.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.dgvRooms.Location = new System.Drawing.Point(0, 329);
             this.dgvRooms.Name = "dgvRooms";
+            this.dgvRooms.ReadOnly = true;
             this.dgvRooms.RowTemplate.Height = 25;
             this.dgvRooms.Size = new System.Drawing.Size(890, 303);
             this.dgvRooms.TabIndex = 0;
+            this.dgvRooms.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRooms_CellClick);
             // 
             // label1
             // 
@@ -123,8 +128,8 @@ namespace PresentationLayer.Views.Admin
             // cbRoomType
             // 
             this.cbRoomType.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbRoomType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRoomType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbRoomType.FormattingEnabled = true;
             this.cbRoomType.Location = new System.Drawing.Point(569, 16);
             this.cbRoomType.Name = "cbRoomType";
             this.cbRoomType.Size = new System.Drawing.Size(228, 25);
@@ -155,20 +160,22 @@ namespace PresentationLayer.Views.Admin
             this.btnCancel.TabIndex = 28;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // button4
+            // btnDelete
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.Honeydew;
-            this.button4.Location = new System.Drawing.Point(371, 132);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 35);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnDelete.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnDelete.BackColor = System.Drawing.Color.Crimson;
+            this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDelete.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnDelete.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnDelete.Location = new System.Drawing.Point(371, 132);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(90, 35);
+            this.btnDelete.TabIndex = 27;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -183,6 +190,7 @@ namespace PresentationLayer.Views.Admin
             this.btnUpdate.TabIndex = 25;
             this.btnUpdate.Text = "Edit";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnSave
             // 
@@ -197,6 +205,7 @@ namespace PresentationLayer.Views.Admin
             this.btnSave.TabIndex = 26;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = false;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnAdd
             // 
@@ -211,6 +220,7 @@ namespace PresentationLayer.Views.Admin
             this.btnAdd.TabIndex = 24;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // label10
             // 
@@ -230,8 +240,9 @@ namespace PresentationLayer.Views.Admin
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(259, 23);
             this.txtSearch.TabIndex = 29;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
-            // Room
+            // FormRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -239,7 +250,7 @@ namespace PresentationLayer.Views.Admin
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnCancel);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnAdd);
@@ -252,8 +263,9 @@ namespace PresentationLayer.Views.Admin
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvRooms);
-            this.Name = "Room";
+            this.Name = "FormRoom";
             this.Text = "Room";
+            this.Load += new System.EventHandler(this.FormRoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -272,7 +284,7 @@ namespace PresentationLayer.Views.Admin
         private System.Windows.Forms.ComboBox cbRoomType;
         private System.Windows.Forms.CheckBox chkStatus;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Button btnAdd;

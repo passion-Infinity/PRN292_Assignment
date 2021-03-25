@@ -35,5 +35,45 @@ namespace PresentationLayer.Model
         {
             return service.DisableAccount(user);
         }
+
+        public DataTable GetAllCategories()
+        {
+            return service.GetAllCategories();
+        }
+
+        public bool AddNewRoomType(RoomType roomType)
+        {
+            return service.AddNewRoomType(roomType);
+        }
+
+        public bool UpdateRoomType(RoomType roomType)
+        {
+            return service.UpdateRoomType(roomType);
+        }
+
+        public DataTable GetAllRooms()
+        {
+            return service.GetAllRooms();
+        }
+
+        public DataTable FindByRoomID(string roomID)
+        {
+            return service.FindRoomsByRoomID(roomID);
+        }
+
+        public bool AddNewRoom(Room room)
+        {
+            return service.AddNewRoom(room);
+        }
+
+        public bool UpdateRoom(Room room)
+        {
+            return service.UpdateRoom(room);
+        }
+
+        public bool DeleteRoom(Room room)
+        {
+            return service.DisableRoom(room);
+        }
     }
 }

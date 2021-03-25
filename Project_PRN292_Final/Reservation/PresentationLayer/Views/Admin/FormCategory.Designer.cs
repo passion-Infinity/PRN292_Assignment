@@ -30,7 +30,6 @@ namespace PresentationLayer.Views.Admin
         private void InitializeComponent()
         {
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtTypeName = new System.Windows.Forms.TextBox();
@@ -56,19 +55,7 @@ namespace PresentationLayer.Views.Admin
             this.btnRefresh.TabIndex = 41;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Crimson;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.Honeydew;
-            this.button4.Location = new System.Drawing.Point(961, 204);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(90, 35);
-            this.button4.TabIndex = 40;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // btnUpdate
             // 
@@ -76,12 +63,13 @@ namespace PresentationLayer.Views.Admin
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpdate.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnUpdate.Location = new System.Drawing.Point(867, 204);
+            this.btnUpdate.Location = new System.Drawing.Point(961, 204);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(90, 35);
             this.btnUpdate.TabIndex = 38;
             this.btnUpdate.Text = "Edit";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -89,12 +77,13 @@ namespace PresentationLayer.Views.Admin
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnAdd.Location = new System.Drawing.Point(771, 204);
+            this.btnAdd.Location = new System.Drawing.Point(865, 204);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(90, 35);
             this.btnAdd.TabIndex = 37;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtTypeName
             // 
@@ -134,7 +123,7 @@ namespace PresentationLayer.Views.Admin
             // 
             // dgvCategories
             // 
-            this.dgvCategories.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.dgvCategories.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvCategories.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCategories.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -143,6 +132,7 @@ namespace PresentationLayer.Views.Admin
             this.dgvCategories.RowTemplate.Height = 25;
             this.dgvCategories.Size = new System.Drawing.Size(657, 277);
             this.dgvCategories.TabIndex = 42;
+            this.dgvCategories.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategories_CellClick);
             // 
             // label2
             // 
@@ -161,7 +151,7 @@ namespace PresentationLayer.Views.Admin
             this.txtPeople.Size = new System.Drawing.Size(120, 23);
             this.txtPeople.TabIndex = 44;
             // 
-            // Category
+            // FormCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -170,15 +160,15 @@ namespace PresentationLayer.Views.Admin
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dgvCategories);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.txtTypeName);
             this.Controls.Add(this.txtTypeID);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
-            this.Name = "Category";
+            this.Name = "FormCategory";
             this.Text = "Category";
+            this.Load += new System.EventHandler(this.FormCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategories)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPeople)).EndInit();
             this.ResumeLayout(false);
@@ -189,7 +179,6 @@ namespace PresentationLayer.Views.Admin
         #endregion
 
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtTypeName;
