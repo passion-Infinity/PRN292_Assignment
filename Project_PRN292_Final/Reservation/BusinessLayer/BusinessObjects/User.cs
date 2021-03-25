@@ -1,34 +1,13 @@
-﻿using BusinessObjects.BusinessRules;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace BusinessObjects
 {
-    public class User : BusinessObject
+    public class User
     {
         public User()
         {
-            AddRule(new ValidateRequired("UserID"));
-            AddRule(new ValidateLength("UserID", 1, 100));
-
-            AddRule(new ValidateRequired("FullName"));
-            AddRule(new ValidateLength("FullName", 1, 50));
-
-            AddRule(new ValidateRequired("Password"));
-            AddRule(new ValidateLength("Password", 1, 50));
-
-            AddRule(new ValidateRequired("Phone"));
-            AddRule(new ValidatePhone("Phone"));
-
-            AddRule(new ValidateRequired("Email"));
-            AddRule(new ValidateEmail("Email"));
-
-            AddRule(new ValidateRequired("IdentityCard"));
-            AddRule(new ValidateIdentity("IdentityCard"));
-
-            AddRule(new ValidateRequired("Address"));
-            AddRule(new ValidateLength("Address", 1, 200));
         }
         public string UserID { get; set; }
         public string FullName { get; set; }

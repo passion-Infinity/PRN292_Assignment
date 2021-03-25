@@ -12,8 +12,8 @@ namespace DataLayer.DAOimpl
         public bool AddNewRoom(Room room)
         {
             string sql = "spAddNewRoom";
-            string parameter = "@roomID,@roomTypeID,@price,@status,@createdDate";
-            object[] value = {room.RoomID, room.RoomTypeID, room.Price, room.Status, room.CreatedDate};
+            string parameter = "@roomID,@roomTypeID,@price,@image,@status,@createdDate";
+            object[] value = {room.RoomID, room.RoomTypeID, room.Price, room.Image, room.Status, room.CreatedDate};
             return ExecuteNonQuery(sql, parameter, value);
         }
 
@@ -33,7 +33,7 @@ namespace DataLayer.DAOimpl
 
         public DataTable GetAllRooms()
         {
-            string sql = "Select r.RoomID, c.RoomTypeName, r.Price, r.Status, r.CreatedDate, r.ModifiedDate from tblRooms r " +
+            string sql = "Select r.RoomID, c.RoomTypeName, r.Price, r.Image, r.Status, r.CreatedDate, r.ModifiedDate from tblRooms r " +
                 "join tblRoomType c On c.RoomTypeID = r.RoomTypeID";
             return ExecuteQuery(sql);
         }
@@ -41,8 +41,8 @@ namespace DataLayer.DAOimpl
         public bool UpdateRoom(Room room)
         {
             string sql = "spUpdateRoom";
-            string parameter = "@roomID,@roomTypeID,@price,@status,@modifiedDate";
-            object[] value = { room.RoomID, room.RoomTypeID, room.Price, room.Status, room.ModifiedDate };
+            string parameter = "@roomID,@roomTypeID,@price,@image,@status,@modifiedDate";
+            object[] value = { room.RoomID, room.RoomTypeID, room.Price, room.Image, room.Status, room.ModifiedDate };
             return ExecuteNonQuery(sql, parameter, value);
         }
     }

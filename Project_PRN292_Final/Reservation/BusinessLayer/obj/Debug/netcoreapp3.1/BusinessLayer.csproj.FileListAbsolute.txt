@@ -7,3 +7,12 @@ C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\BusinessLayer\bi
 C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
 C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
 C:\Users\User\OneDrive\Desktop\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.deps.json
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\User\OneDrive\Desktop\Run\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb

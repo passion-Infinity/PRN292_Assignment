@@ -8,6 +8,7 @@ using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using PresentationLayer.Views.Admin;
 using PresentationLayer.Presenter;
+using System.IO;
 
 namespace PresentationLayer.Views.Admin
 {
@@ -19,6 +20,8 @@ namespace PresentationLayer.Views.Admin
         int valueOfComboBox;
         DataTable da;
         RoomPresenter roomPresenter;
+        string profile;
+        string absolutePath = Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(System.IO.Directory.GetCurrentDirectory())));
 
 
         public FormRoom()
@@ -28,6 +31,7 @@ namespace PresentationLayer.Views.Admin
         public string RoomID { get => txtRoomID.Text; set => txtRoomID.Text = value; }
         public int Category { get => valueOfComboBox; set => valueOfComboBox = value; }
         public float Price { get => float.Parse(txtPrice.Text); set => price = value; }
+        public string Image { get => profile; set => profile = value; }
         public bool Status { get => chkStatus.Checked; set => chkStatus.Checked = value; }
 
         private string _message;
@@ -87,6 +91,9 @@ namespace PresentationLayer.Views.Admin
             txtPrice.Enabled = true;
             chkStatus.Enabled = true;
             chkStatus.Checked = true;
+
+            btnUpload.Enabled = true;
+            btnUpload.BackColor = Color.Gray;
         }
         private void UnControlBlock()
         {
@@ -111,7 +118,11 @@ namespace PresentationLayer.Views.Admin
             txtRoomID.Enabled = false;
             txtPrice.Enabled = false;
             chkStatus.Enabled = false;
-           
+
+            btnUpload.Enabled = false;
+            btnUpload.BackColor = default;
+            btnUpload.Cursor = Cursors.Hand;
+
         }
 
         private void LoadDataCombobox()
@@ -233,13 +244,64 @@ namespace PresentationLayer.Views.Admin
                 txtPrice.Text = dgvRooms.Rows[index].Cells[2].Value.ToString();
                 try
                 {
-                    chkStatus.Checked = bool.Parse(dgvRooms.Rows[index].Cells[3].Value.ToString());
+                    profile = dgvRooms.Rows[index].Cells[3].Value.ToString();
+                    ptRoom.Image = new Bitmap(absolutePath + profile);
+                }
+                catch (Exception)
+                {
+                    ptRoom.Image = new Bitmap(absolutePath + @"\Resources\Images\default1.png");
+                }
+                try
+                {
+                    chkStatus.Checked = bool.Parse(dgvRooms.Rows[index].Cells[4].Value.ToString());
                 }
                 catch
                 {
                     chkStatus.Checked = false;
                 }
                 UnControlBlock();
+            }
+        }
+
+        private void btnUpload_Click(object sender, EventArgs e)
+        {
+            if (!string.IsNullOrEmpty(txtRoomID.Text.Trim()))
+            {
+                OpenFileDialog openFile = new OpenFileDialog();
+                openFile.Title = "Select a Image";
+                openFile.Filter = "jpg files (*.jpg)|*.jpg|png files(*.png)|*.png|All files (*.*)|*.*";
+                openFile.FileName = "Choose image";
+                string appPath = absolutePath + @"\Resources\Images\";
+                if (Directory.Exists(appPath) == false)
+                {
+                    Directory.CreateDirectory(appPath);
+                }
+                if (openFile.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        string iName = openFile.SafeFileName;
+                        string extension = iName.Split(".")[1];
+                        string random = DateTime.Now.ToFileTime() + "";
+                        string imageName = txtRoomID.Text + "_" + random + "." + extension;
+                        string filepath = openFile.FileName;
+                        File.Copy(filepath, appPath + imageName, true);
+                        ptRoom.Image = new Bitmap(appPath + imageName);
+                        profile = @"\Resources\Images\" + imageName;
+                    }
+                    catch (Exception exp)
+                    {
+                        MessageBox.Show("Unable to open file " + exp.Message);
+                    }
+                }
+                else
+                {
+                    openFile.Dispose();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter RoomID before uploading profile", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
     }

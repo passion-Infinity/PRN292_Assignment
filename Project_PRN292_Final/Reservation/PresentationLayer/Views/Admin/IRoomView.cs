@@ -9,6 +9,7 @@ namespace PresentationLayer.Views.Admin
         string RoomID { get; set; }
         int Category { get; set; }
         float Price { get; set; }
+        string Image { get; set; }
         bool Status { get; set; }
         string Message { get; set; }
         string Search { get; set; }

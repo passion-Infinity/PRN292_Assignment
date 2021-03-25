@@ -53,7 +53,7 @@ namespace PresentationLayerWPF.UserControls {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PresentationLayerWPF;component/views/user/usercontrols/roomcard.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PresentationLayerWPF;V1.0.0.0;component/views/user/usercontrols/roomcard.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\User\UserControls\RoomCard.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

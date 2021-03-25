@@ -57,7 +57,7 @@ namespace PresentationLayerWPF.Views.Customer {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/PresentationLayerWPF;component/views/user/shopping.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/PresentationLayerWPF;V1.0.0.0;component/views/user/shopping.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\User\Shopping.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

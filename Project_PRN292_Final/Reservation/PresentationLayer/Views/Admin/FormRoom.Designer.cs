@@ -29,6 +29,7 @@ namespace PresentationLayer.Views.Admin
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRoom));
             this.dgvRooms = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,7 +46,10 @@ namespace PresentationLayer.Views.Admin
             this.btnAdd = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnUpload = new System.Windows.Forms.Button();
+            this.ptRoom = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptRoom)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvRooms
@@ -55,11 +59,11 @@ namespace PresentationLayer.Views.Admin
             this.dgvRooms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvRooms.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRooms.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvRooms.Location = new System.Drawing.Point(0, 329);
+            this.dgvRooms.Location = new System.Drawing.Point(0, 326);
             this.dgvRooms.Name = "dgvRooms";
             this.dgvRooms.ReadOnly = true;
             this.dgvRooms.RowTemplate.Height = 25;
-            this.dgvRooms.Size = new System.Drawing.Size(890, 303);
+            this.dgvRooms.Size = new System.Drawing.Size(1084, 303);
             this.dgvRooms.TabIndex = 0;
             this.dgvRooms.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRooms_CellClick);
             // 
@@ -68,7 +72,7 @@ namespace PresentationLayer.Views.Admin
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(88, 17);
+            this.label1.Location = new System.Drawing.Point(39, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 17);
             this.label1.TabIndex = 1;
@@ -79,7 +83,7 @@ namespace PresentationLayer.Views.Admin
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(488, 18);
+            this.label2.Location = new System.Drawing.Point(439, 16);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(64, 17);
             this.label2.TabIndex = 2;
@@ -90,7 +94,7 @@ namespace PresentationLayer.Views.Admin
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(88, 75);
+            this.label3.Location = new System.Drawing.Point(39, 73);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 17);
             this.label3.TabIndex = 3;
@@ -101,7 +105,7 @@ namespace PresentationLayer.Views.Admin
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(488, 76);
+            this.label4.Location = new System.Drawing.Point(439, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 17);
             this.label4.TabIndex = 4;
@@ -111,7 +115,7 @@ namespace PresentationLayer.Views.Admin
             // 
             this.txtRoomID.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtRoomID.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtRoomID.Location = new System.Drawing.Point(173, 16);
+            this.txtRoomID.Location = new System.Drawing.Point(124, 14);
             this.txtRoomID.Name = "txtRoomID";
             this.txtRoomID.Size = new System.Drawing.Size(266, 25);
             this.txtRoomID.TabIndex = 5;
@@ -120,7 +124,7 @@ namespace PresentationLayer.Views.Admin
             // 
             this.txtPrice.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txtPrice.Location = new System.Drawing.Point(173, 74);
+            this.txtPrice.Location = new System.Drawing.Point(124, 72);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(266, 25);
             this.txtPrice.TabIndex = 6;
@@ -130,7 +134,7 @@ namespace PresentationLayer.Views.Admin
             this.cbRoomType.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.cbRoomType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbRoomType.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbRoomType.Location = new System.Drawing.Point(569, 16);
+            this.cbRoomType.Location = new System.Drawing.Point(520, 14);
             this.cbRoomType.Name = "cbRoomType";
             this.cbRoomType.Size = new System.Drawing.Size(228, 25);
             this.cbRoomType.TabIndex = 7;
@@ -140,7 +144,7 @@ namespace PresentationLayer.Views.Admin
             this.chkStatus.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.chkStatus.AutoSize = true;
             this.chkStatus.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkStatus.Location = new System.Drawing.Point(569, 75);
+            this.chkStatus.Location = new System.Drawing.Point(520, 73);
             this.chkStatus.Name = "chkStatus";
             this.chkStatus.Size = new System.Drawing.Size(61, 21);
             this.chkStatus.TabIndex = 8;
@@ -154,7 +158,7 @@ namespace PresentationLayer.Views.Admin
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnCancel.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnCancel.Location = new System.Drawing.Point(633, 132);
+            this.btnCancel.Location = new System.Drawing.Point(577, 142);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(90, 35);
             this.btnCancel.TabIndex = 28;
@@ -169,7 +173,7 @@ namespace PresentationLayer.Views.Admin
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnDelete.Location = new System.Drawing.Point(371, 132);
+            this.btnDelete.Location = new System.Drawing.Point(315, 142);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(90, 35);
             this.btnDelete.TabIndex = 27;
@@ -184,7 +188,7 @@ namespace PresentationLayer.Views.Admin
             this.btnUpdate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUpdate.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnUpdate.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnUpdate.Location = new System.Drawing.Point(277, 132);
+            this.btnUpdate.Location = new System.Drawing.Point(221, 142);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(90, 35);
             this.btnUpdate.TabIndex = 25;
@@ -199,7 +203,7 @@ namespace PresentationLayer.Views.Admin
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSave.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSave.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnSave.Location = new System.Drawing.Point(541, 132);
+            this.btnSave.Location = new System.Drawing.Point(485, 142);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(90, 35);
             this.btnSave.TabIndex = 26;
@@ -214,7 +218,7 @@ namespace PresentationLayer.Views.Admin
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.Color.Honeydew;
-            this.btnAdd.Location = new System.Drawing.Point(181, 132);
+            this.btnAdd.Location = new System.Drawing.Point(125, 142);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(90, 35);
             this.btnAdd.TabIndex = 24;
@@ -227,7 +231,7 @@ namespace PresentationLayer.Views.Admin
             this.label10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(5, 303);
+            this.label10.Location = new System.Drawing.Point(5, 300);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(80, 17);
             this.label10.TabIndex = 30;
@@ -236,17 +240,46 @@ namespace PresentationLayer.Views.Admin
             // txtSearch
             // 
             this.txtSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.txtSearch.Location = new System.Drawing.Point(88, 300);
+            this.txtSearch.Location = new System.Drawing.Point(88, 297);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(259, 23);
             this.txtSearch.TabIndex = 29;
             this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
+            // btnUpload
+            // 
+            this.btnUpload.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnUpload.BackColor = System.Drawing.Color.Gray;
+            this.btnUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnUpload.Font = new System.Drawing.Font("UD Digi Kyokasho NP-B", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpload.ForeColor = System.Drawing.Color.Honeydew;
+            this.btnUpload.Location = new System.Drawing.Point(837, 151);
+            this.btnUpload.Name = "btnUpload";
+            this.btnUpload.Size = new System.Drawing.Size(90, 35);
+            this.btnUpload.TabIndex = 32;
+            this.btnUpload.Text = "Upload";
+            this.btnUpload.UseVisualStyleBackColor = false;
+            this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
+            // 
+            // ptRoom
+            // 
+            this.ptRoom.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.ptRoom.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ptRoom.Image = ((System.Drawing.Image)(resources.GetObject("ptRoom.Image")));
+            this.ptRoom.Location = new System.Drawing.Point(796, 2);
+            this.ptRoom.Name = "ptRoom";
+            this.ptRoom.Size = new System.Drawing.Size(152, 143);
+            this.ptRoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptRoom.TabIndex = 31;
+            this.ptRoom.TabStop = false;
+            // 
             // FormRoom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(890, 632);
+            this.ClientSize = new System.Drawing.Size(1084, 629);
+            this.Controls.Add(this.btnUpload);
+            this.Controls.Add(this.ptRoom);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.btnCancel);
@@ -267,6 +300,7 @@ namespace PresentationLayer.Views.Admin
             this.Text = "Room";
             this.Load += new System.EventHandler(this.FormRoom_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptRoom)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +324,7 @@ namespace PresentationLayer.Views.Admin
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.PictureBox ptRoom;
     }
 }

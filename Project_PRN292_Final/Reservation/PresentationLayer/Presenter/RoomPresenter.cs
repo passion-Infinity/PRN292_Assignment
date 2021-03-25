@@ -30,6 +30,7 @@ namespace PresentationLayer.Presenter
             room.RoomID = View.RoomID;
             room.RoomTypeID = View.Category;
             room.Price = View.Price;
+            room.Image = View.Image;
             room.Status = View.Status;
             room.CreatedDate = DateTime.Now;
 
@@ -44,6 +45,7 @@ namespace PresentationLayer.Presenter
             room.RoomID = View.RoomID;
             room.RoomTypeID = View.Category;
             room.Price = View.Price;
+            room.Image = View.Image;
             room.Status = View.Status;
             room.ModifiedDate = DateTime.Now;
 
