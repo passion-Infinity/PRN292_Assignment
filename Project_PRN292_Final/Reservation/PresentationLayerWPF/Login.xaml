@@ -13,6 +13,11 @@
         
         mc:Ignorable="d"
         Title="Login" Height="600" Width="1000" ResizeMode="CanResizeWithGrip" Background="Transparent" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+    <WindowChrome.WindowChrome>
+        <WindowChrome CaptionHeight="35"
+                      ResizeBorderThickness="5"
+                      ></WindowChrome>
+    </WindowChrome.WindowChrome>
     <Border CornerRadius="8" Background="White">
         <Grid>
             <Grid.ColumnDefinitions>
@@ -78,7 +83,7 @@
             <!--#endregion-->
 
             <!--#region Top Bar -->
-            <Grid VerticalAlignment="Top" Grid.ColumnSpan="2">
+            <Grid WindowChrome.IsHitTestVisibleInChrome="True" VerticalAlignment="Top" Grid.ColumnSpan="2">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Height="34" Orientation="Horizontal">
                     <Button Name="MinimizeButton" Width="30" Height="30"  Foreground="White" Style="{StaticResource MaterialDesignIconButton}" ToolTip="Minimize">
                         <materialDesign:PackIcon Kind="WindowMinimize" Height="20" Width="20"/>
