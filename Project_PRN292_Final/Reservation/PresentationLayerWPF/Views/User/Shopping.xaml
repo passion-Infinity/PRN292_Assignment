@@ -8,50 +8,193 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" 
         xmlns:viewmodels="clr-namespace:PresentationLayerWPF.Views.User.ViewModels"
         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
-        TextElement.FontWeight="Medium"
         TextElement.FontSize="15"
-        FontFamily="{materialDesign:MaterialDesignFont}"
         
         mc:Ignorable="d"
         Title="User" Height="820" Width="1280" Background="Transparent" AllowsTransparency="True" WindowStyle="None" WindowStartupLocation="CenterScreen" ResizeMode="CanResize">
     <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="35"
+        <WindowChrome CaptionHeight="70"
                       ResizeBorderThickness="5"
                       ></WindowChrome>
     </WindowChrome.WindowChrome>
     <Window.Resources>
-        
+        <Style x:Key="ListBoxItemStyle" TargetType="{x:Type ListBoxItem}">
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ListBoxItem}">
+                        <!--<Border Background="{TemplateBinding Background}">-->
+                        <Border Name="MenuItemsBorder">
+                            <Border.Style>
+                                <Style TargetType="Border">
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="Gray" Opacity="0.1"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}}" Value="False">
+                                            <Setter Property="Background" Value="Transparent"/>
+                                        </DataTrigger>
+                                        <MultiDataTrigger>
+                                            <MultiDataTrigger.Conditions>
+                                                <Condition Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}}" Value="False"/>
+                                                <Condition Binding="{Binding ElementName=MenuItemsBorder, Path=IsMouseOver}" Value="True"/>
+                                            </MultiDataTrigger.Conditions>
+                                            <Setter Property="Border.Background">
+                                                <Setter.Value>
+                                                    <SolidColorBrush Color="Gray" Opacity="0.05"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </MultiDataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </Border.Style>
+                            <Grid Margin="60,0,0,0">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="15"/>
+                                    <ColumnDefinition/>
+                                </Grid.ColumnDefinitions>
+
+                                <!--Menu Icon-->
+                                <materialDesign:PackIcon Kind="{Binding Icon}" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                    <materialDesign:PackIcon.Style>
+                                        <Style TargetType="materialDesign:PackIcon">
+                                            <Setter Property="Foreground" Value="#5E82F5"/>
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}}" Value="False">
+                                                    <Setter Property="Foreground" Value="#292934"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </materialDesign:PackIcon.Style>
+                                </materialDesign:PackIcon>
+
+                                <!--Menu Text-->
+                                <TextBlock 
+                                    Margin="15,0,0,0"
+                                    VerticalAlignment="Center"
+                                    Text="{Binding MenuName}"
+                                    Grid.Column="1">
+                                    <TextBlock.Style>
+                                        <Style TargetType="{x:Type TextBlock}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}}" Value="True">
+                                                    <Setter Property="FontWeight" Value="Bold"/>
+                                                    <Setter Property="Foreground" Value="#292934"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+
+                                <!--Indicator-->
+                                <Border 
+                                    CornerRadius="1"
+                                    Grid.Column="1"
+                                    Width="4"
+                                    HorizontalAlignment="Right"
+                                    Height="auto"
+                                    Background="#5E82F5">
+                                    <Border.Style>
+                                        <Style TargetType="{x:Type Border}">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IsSelected, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType={x:Type ListBoxItem}}}" Value="False">
+                                                    <Setter Property="Visibility" Value="Collapsed"/>
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </Border.Style>
+                                </Border>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
     </Window.Resources>
-    <Border CornerRadius="8" Background="White">
+    <!--<Border CornerRadius="8" Background="White">-->
+    <materialDesign:Card UniformCornerRadius="8" materialDesign:ShadowAssist.ShadowDepth="Depth0">
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="280"/>
+                <ColumnDefinition Width="240"/>
                 <ColumnDefinition/>
             </Grid.ColumnDefinitions>
 
-            <!--<Grid Background="Gray"/>-->
-            <TextBlock Text="Hello"></TextBlock>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
 
-            <!--#region Logo -->
-            <Grid Margin="48, 39, 0, 0" HorizontalAlignment="Left" VerticalAlignment="Top">
-                <Rectangle RadiusX="10" RadiusY="10" Fill="#F1F1F9" Height="34" Width="34"></Rectangle>
-                <materialDesign:PackIcon VerticalAlignment="Center" HorizontalAlignment="Center" Kind="PalmTree"></materialDesign:PackIcon>
-            </Grid>
-            <TextBlock Text="Resort Reservation" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="87,47,0,0"></TextBlock>
-            <!--#endregion-->
+            <Frame Grid.Column="1" Grid.Row="1" Background="#F8FAFC"
+                   Source="{Binding ElementName=MenuList, Path=SelectedItem.Source}">
+            </Frame>
 
-            <!--#region Menu -->
-            <ListBox Margin="0, 165, 0, 280"
-                     SelectedIndex="1"
+            <materialDesign:Card VerticalAlignment="Bottom" 
+                                 Background="White"
+                                 Height="1"
+                                 Grid.Column="1"
+                                 Grid.ColumnSpan="1"
+                                 materialDesign:ShadowAssist.ShadowDepth="Depth2"
+                                 materialDesign:ShadowAssist.ShadowEdges="Bottom"/>
+            <materialDesign:Card HorizontalAlignment="Right" 
+                                 Background="White"
+                                 Width="1" 
+                                 Grid.RowSpan="2"
+                                 materialDesign:ShadowAssist.ShadowDepth="Depth3"
+                                 materialDesign:ShadowAssist.ShadowEdges="Right"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <!--#region Logo -->
+                <!--<Grid HorizontalAlignment="Left" VerticalAlignment="Top">
+                    <Rectangle RadiusX="10" RadiusY="10" Fill="#F1F1F9" Height="34" Width="34"></Rectangle>
+                    <materialDesign:PackIcon VerticalAlignment="Center" HorizontalAlignment="Center" Kind="PalmTree"></materialDesign:PackIcon>
+                </Grid>-->
+                <Image Source="/Assets/icon.png" Width="50"/>
+                <TextBlock Text="Resort Reservation" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                <!--#endregion-->
+            </StackPanel>
+
+            <Grid Grid.Row="1">
+                <!--#region Menu -->
+                <ListBox x:Name="MenuList" ItemContainerStyle="{StaticResource ListBoxItemStyle}"
+                     Margin="0, 30, 0, 0"
+                     SelectedIndex="0"
                      ItemsSource="{Binding MenuItems}"
                      BorderThickness="0"
                      Background="Transparent"
                      Foreground="#292934">
-                <ListBox.DataContext>
-                    <viewmodels:MenuViewModels/>
-                </ListBox.DataContext>
-            </ListBox>
-            <!--#endregion-->
+                    <ListBox.DataContext>
+                        <viewmodels:MenuViewModels/>
+                    </ListBox.DataContext>
+                </ListBox>
+                <!--#endregion-->
+            </Grid>
+
+            <Grid WindowChrome.IsHitTestVisibleInChrome="True" Grid.Column="1">
+                <DockPanel Margin="20,0,15,0">
+                    <TextBlock Text="Search" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" FontSize="30"/>
+                    <StackPanel DockPanel.Dock="Right" VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal">
+                        <Ellipse Width="40" Height="40">
+                            <Ellipse.Fill>
+                                <ImageBrush ImageSource="/Assets/avatar.jpg"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                        <TextBlock Text="Đào Phương Nam" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                        <materialDesign:PopupBox PlacementMode="BottomAndAlignRightEdges">
+                            <StackPanel Background="White" Width="100">
+                                <Button Content="Account"/>
+                                <Button Content="Logout"/>
+                                <Button x:Name="btnMenuExit" Content="Exit" Click="btnMenuExit_Click"/>
+                            </StackPanel>
+                        </materialDesign:PopupBox>
+                    </StackPanel>
+                </DockPanel>
+            </Grid>
+
         </Grid>
-    </Border>
+    </materialDesign:Card>
+    <!--</Border>-->
 </Window>

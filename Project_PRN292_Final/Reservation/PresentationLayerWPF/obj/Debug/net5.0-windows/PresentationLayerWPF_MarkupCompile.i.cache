@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
 C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\PresentationLayerWPF\App.xaml
-32084752904
+4941633930
 
-9-1737658319
+131332870345
 1951078127719
-Login.xaml;Views\User\Shopping.xaml;Views\User\UserControls\RoomCard.xaml;
+Login.xaml;Views\User\Pages\Search.xaml;Views\User\Shopping.xaml;Views\User\UserControls\RoomCard.xaml;
 
-False
+True
 

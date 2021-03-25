@@ -17,6 +17,8 @@
     <None Remove="Assets\008.jpg" />
     <None Remove="Assets\009.jpg" />
     <None Remove="Assets\010.jpg" />
+    <None Remove="Assets\avatar.jpg" />
+    <None Remove="Assets\Icon.png" />
     <None Remove="Assets\login_image.jpg" />
   </ItemGroup>
 
@@ -53,6 +55,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\010.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\avatar.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\icon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Assets\login_image.jpg">

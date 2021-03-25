@@ -16,3 +16,12 @@ C:\Users\ealflm\Desktop\Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\D
 C:\Users\ealflm\Desktop\Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
 C:\Users\ealflm\Desktop\Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
 C:\Users\ealflm\Desktop\Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.deps.json
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\bin\Debug\netcoreapp3.1\BusinessLayer.pdb
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.AssemblyInfo.cs
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.dll
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\BusinessLayer\obj\Debug\netcoreapp3.1\BusinessLayer.pdb

@@ -1,4 +1,5 @@
 ﻿using PresentationLayerWPF.Views.User.Models;
+using System;
 using System.Collections.ObjectModel;
 
 namespace PresentationLayerWPF.Views.User.ViewModels {
@@ -13,20 +14,32 @@ namespace PresentationLayerWPF.Views.User.ViewModels {
         public MenuViewModels() {
             _menuItems = new ObservableCollection<MenuModel>() {
                 new MenuModel() {
-                    MenuName ="Search",
-                    Icon = "Magnify"
+                    MenuName = "Search",
+                    Icon = "Magnify",
+                    Source = new Uri("Pages/Search.xaml", UriKind.Relative)
                 },
                 new MenuModel() {
-                    MenuName ="Cart",
-                    Icon = "Cart"
+                    MenuName = "Cart",
+                    Icon = "Cart",
+                    Source = new Uri("Pages/Search.xaml", UriKind.Relative)
                 },
                 new MenuModel() {
-                    MenuName ="Order History",
-                    Icon = "History"
+                    MenuName = "Order History",
+                    Icon = "History",
+                    Source = new Uri("Pages/Search.xaml", UriKind.Relative)
+
                 },
                 new MenuModel() {
-                    MenuName ="Message",
-                    Icon = "Message"
+                    MenuName = "Message",
+                    Icon = "Message",
+                    Source = new Uri("Pages/Search.xaml", UriKind.Relative)
+
+                },
+                new MenuModel() {
+                    MenuName = "Setting",
+                    Icon = "Setting",
+                    Source = new Uri("Pages/Search.xaml", UriKind.Relative)
+
                 }
             };
         }
