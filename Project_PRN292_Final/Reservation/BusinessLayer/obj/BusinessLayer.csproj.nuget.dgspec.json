@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {}
+    "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {
+    "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
         "projectName": "BusinessLayer",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\obj\\",
+        "projectPath": "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\ealflm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\BusinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ealflm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
