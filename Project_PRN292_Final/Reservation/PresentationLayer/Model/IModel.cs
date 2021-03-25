@@ -21,6 +21,6 @@ namespace PresentationLayer.Model
         bool AddNewRoom(Room room);
         bool UpdateRoom(Room room);
         bool DeleteRoom(Room room);
-
+        User CheckLogin(string username, string password);
     }
 }

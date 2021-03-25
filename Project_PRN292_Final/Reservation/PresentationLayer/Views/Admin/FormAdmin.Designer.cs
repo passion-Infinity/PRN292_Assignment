@@ -75,7 +75,7 @@ namespace PresentationLayer.Views.Admin
             this.btnReport.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.btnReport.Size = new System.Drawing.Size(220, 80);
             this.btnReport.TabIndex = 5;
-            this.btnReport.Text = "     Reports";
+            this.btnReport.Text = "     Logout";
             this.btnReport.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReport.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnReport.UseVisualStyleBackColor = true;
@@ -226,6 +226,7 @@ namespace PresentationLayer.Views.Admin
             this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Name = "FormAdmin";
             this.Text = "Management";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FormAdmin_FormClosing);
             this.panelMenu.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
             this.panelLogo.PerformLayout();

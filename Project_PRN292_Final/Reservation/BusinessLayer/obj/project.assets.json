@@ -532,11 +532,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
+      "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
       "projectName": "BusinessLayer",
-      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
+      "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\BusinessLayer\\BusinessLayer.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\BusinessLayer\\obj\\",
+      "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\BusinessLayer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

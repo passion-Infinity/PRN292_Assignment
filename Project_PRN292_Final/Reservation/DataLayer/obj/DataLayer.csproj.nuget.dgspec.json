@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {}
+    "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {
+    "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
+        "projectUniqueName": "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
+        "projectPath": "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\DataLayer\\DataLayer.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Project_PRN292_Final\\Reservation\\DataLayer\\obj\\",
+        "outputPath": "C:\\Users\\User\\OneDrive\\Desktop\\Run\\Project_PRN292_Final\\Reservation\\DataLayer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -40,6 +40,27 @@ namespace PresentationLayer.Presenter
                 View.Message = string.Format("Register successfully");
             }
         }
+        public void RegisterAccountForCustomer()
+        {
+            User userDTO = new User();
+            userDTO.UserID = View.UserID;
+            userDTO.FullName = View.FullName;
+            userDTO.Password = View.Password;
+            userDTO.Phone = View.Phone;
+            userDTO.Email = View.Email;
+            userDTO.IdentityCard = View.IdentityCard;
+            userDTO.Gender = View.Gender;
+            userDTO.Address = View.Address;
+            userDTO.Image = "";
+            userDTO.Role = "customer";
+            userDTO.Status = true;
+            userDTO.CreatedDate = DateTime.Now;
+
+            if (Model.RegisterAccount(userDTO))
+            {
+                View.Message = string.Format("Register successfully");
+            }
+        }
         public void UpdateAccountForAdmin()
         {
             User userDTO = new User();

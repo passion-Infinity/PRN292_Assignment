@@ -107,7 +107,13 @@ namespace PresentationLayer.Views.Admin
 
         private void btnReport_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new FormAccount(), sender);
+            ActiveButton(sender);
+            Application.Exit();
+        }
+
+        private void FormAdmin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

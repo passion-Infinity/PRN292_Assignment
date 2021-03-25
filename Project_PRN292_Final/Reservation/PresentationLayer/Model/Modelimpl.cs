@@ -75,5 +75,10 @@ namespace PresentationLayer.Model
         {
             return service.DisableRoom(room);
         }
+
+        public User CheckLogin(string username, string password)
+        {
+            return service.CheckLogin(username, password);
+        }
     }
 }
