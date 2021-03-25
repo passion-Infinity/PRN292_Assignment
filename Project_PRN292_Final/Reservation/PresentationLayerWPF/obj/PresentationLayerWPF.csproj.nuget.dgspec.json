@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj": {}
+    "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj": {
+    "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj",
+        "projectUniqueName": "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj",
         "projectName": "PresentationLayerWPF",
-        "projectPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj",
+        "projectPath": "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\PresentationLayerWPF.csproj",
         "packagesPath": "C:\\Users\\ealflm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ealflm\\Desktop\\Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\obj\\",
+        "outputPath": "C:\\Users\\ealflm\\Desktop\\My Git\\Project_PRN292_Final\\Reservation\\PresentationLayerWPF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ealflm\\AppData\\Roaming\\NuGet\\NuGet.Config",

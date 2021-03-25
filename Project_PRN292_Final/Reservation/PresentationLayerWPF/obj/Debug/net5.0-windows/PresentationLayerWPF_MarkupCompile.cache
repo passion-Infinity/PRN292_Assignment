@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\ealflm\Desktop\Git\Project_PRN292_Final\Reservation\PresentationLayerWPF\obj\Debug\net5.0-windows\
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\PresentationLayerWPF\obj\Debug\net5.0-windows\
 PresentationLayerWPF
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\ealflm\Desktop\Git\Project_PRN292_Final\Reservation\PresentationLayerWPF\App.xaml
+C:\Users\ealflm\Desktop\My Git\Project_PRN292_Final\Reservation\PresentationLayerWPF\App.xaml
 32084752904
 
 7-124392891
 1951078127719
 Login.xaml;Views\User\Shopping.xaml;Views\User\UserControls\RoomCard.xaml;
 
-False
+True
 
